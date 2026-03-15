@@ -1,0 +1,25 @@
+.board {
+  width: 21%;
+  aspect-ratio: 1;
+  display: grid;
+  border: 0px solid rgba(0, 0, 0, 0.1);
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.child {
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+#heading {
+  font-family: serif;
+  margin-left: 40%;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize;
+}

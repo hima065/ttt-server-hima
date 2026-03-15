@@ -1,0 +1,19 @@
+{
+  "imports": {
+    "hono": "npm:hono@^4.7.5"
+  },
+
+  "tasks": {
+    "start": "deno run -A --watch src/server.js",
+    "test": "deno test -A",
+
+    "test-watch": "deno test --watch -A",
+    "lint": "deno lint",
+    "test-coverage": "deno test -A --coverage=coverage",
+    "command2": "deno coverage",
+    "coverage": {
+      "command": "deno coverage --html",
+      "dependencies": ["test-coverage", "command2"]
+    }
+  }
+}
